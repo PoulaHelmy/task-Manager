@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Task Manager System</title>
 
-    {{--<!-- Bootstrap 3.3.7 -->--}}
     <link rel="stylesheet" href="{{ asset('dashboard_files/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('dashboard_files/css/ionicons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('dashboard_files/css/skin-blue.min.css') }}">
@@ -17,6 +16,7 @@
         <link rel="stylesheet" href="{{ asset('dashboard_files/css/rtl.css') }}">
 
         <style>
+
             body, h1, h2, h3, h4, h5, h6 {
                 font-family: 'Cairo', sans-serif !important;
             }
@@ -29,14 +29,39 @@
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
+    <style>
+        body {
+            background-image: url('{{ asset('./photo-1432888498266-38ffec3eaf0a.png') }}') !important;
+            background-size:cover !important;
+            background-repeat: no-repeat !important;
+            height: 100% !important;
+            overflow: hidden !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-box-body{
+            border-radius: 15px;
+            background-color: rgba(0,0,0,0.7);
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .login-logo{
+            color: #000;
+            font-size: 36px;
+            font-weight: 500;
+            background-color: rgba(255,255,255,0.8);
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body class="login-page">
 
 <div class="login-box">
 
     <div class="login-logo">
-        <a href="../../index2.html"><b>Task Manager System</b></a>
+        <b>Task Manager System</b>
     </div><!-- end of login lgo -->
 
     <div class="login-box-body">

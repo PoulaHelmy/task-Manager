@@ -3,12 +3,13 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 class Ticket extends Model
 {
-    use \Dimsav\Translatable\Translatable;
-    public $translatedAttributes = ['name'];
-
+    use Translatable;
+    public $useTranslationFallback = true;
+    public $translatedAttributes = ['name', 'description'];
     protected $fillable=['name','status','deadline'];
     protected $table='tickets';
     public function user(){

@@ -17,6 +17,7 @@ class CreateTicketTranslationsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('ticket_id');
             $table->string('name');
+            $table->text('description');
             $table->string('locale')->index();
             $table->unique(['ticket_id', 'locale']);
             $table->foreign('ticket_id')->references('id')->on('tickets')->onDelete('cascade');
